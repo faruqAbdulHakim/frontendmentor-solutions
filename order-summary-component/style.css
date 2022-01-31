@@ -6,8 +6,8 @@
   --Very-pale-blue: hsl(225, 100%, 98%);
   --Desaturated-blue: hsl(224, 23%, 55%);
   --Dark-blue: hsl(223, 47%, 23%);
-  --space: 20px;
-  --space-extra: 34px;
+  --space: 18px;
+  --space-extra: 32px;
 }
 
 .clickable {
@@ -136,9 +136,8 @@
 .attribution {
   position: absolute;
   bottom: 10px;
-  width: 100%;
+  left: 10px;
   font-size: 11px;
-  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
