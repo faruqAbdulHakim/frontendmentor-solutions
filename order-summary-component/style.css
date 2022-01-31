@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --space: 20px;
+  --space-extra: 34px;
+}
+
+.clickable {
+  min-width: 44px;
+  min-height: 48px;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  transition: all .15s ease-out;
+}
+
+* {
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 3px;
+  background-image: url('images/pattern-background-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: 0 -10vh;
+  background-size: contain;
+  background-color: var(--Pale-blue);
+}
+
+.order__card {
+  background-color: white;
+  max-width: 360px;
+  margin: 15px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 32px -15px rgba(0, 0, 255, .5);
+}
+
+.order__banner {
+  width: 100%;
+}
+
+.order__info-wrapper {
+  padding: 0 25px;
+  text-align: center;
+}
+
+.order__info__heading-text {
+  margin-top: var(--space);
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--Dark-blue);
+}
+
+.order__info__info-text {
+  font-weight: 300;
+  margin-top: var(--space);
+  color: var(--Desaturated-blue);
+}
+
+.order__price {
+  margin-top: var(--space-extra);
+  display: flex;
+  align-items: center;
+}
+
+.order__music-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.order__plan-wrapper {
+  margin-left: 18px;
+}
+
+.order__price-plan {
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: var(--Dark-blue);
+}
+
+.order__price-text {
+  color: var(--Desaturated-blue);
+}
+
+.order__price > button {
+  margin-left: auto;
+  font-weight: 700;
+  text-decoration: underline;
+  color: var(--Bright-blue);
+  background: transparent;
+}
+
+.order__price > button:hover {
+  opacity: .6;
+  text-decoration: none;
+}
+
+.order__primary-button {
+  margin-top: var(--space-extra);
+  width: 100%;
+  background-color: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px -4px rgba(0, 0, 255, .5);
+}
+
+.order__primary-button:hover {
+  opacity: .6;
+}
+
+.order__secondary-button {
+  margin: var(--space) 0;
+  width: 100%;
+  background: transparent;
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+}
+
+.order__secondary-button:hover {
+  color: var(--Dark-blue);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    background-image: url('images/pattern-background-desktop.svg');
+  }
+}
