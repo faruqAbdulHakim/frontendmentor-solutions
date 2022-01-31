@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  box-sizing: border-box;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-soft-blue {
+  color: hsl(215, 51%, 70%);
+}
+
+.text-cyan {
+  color: hsl(178, 100%, 50%);
+}
+
+.text-cyan-onhover:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.space-top {
+  margin-top: 18px;
+}
+
+.transition {
+  transition: all .2s ease-in-out;
+}
+
+.main {
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nft__card {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 320px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 15px 0 15px rgba(0,0,0,.1), 0 15px 0 30px rgba(0,0,0,.05);
+}
+
+.nft__image-wrapper {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.nft__image {
+  width: 100%;
+  cursor: pointer;
+}
+
+.nft__image-overlay {
+  opacity: 0;
+  inset: 0;
+  width: 100%;
+  height: 99%;
+  background-color: hsla(178, 100%, 50%, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.nft__image-overlay:hover {
+  opacity: 1;
+}
+
+.nft__image-onhover {
+  width: 44px;
+}
+
+.nft__heading-text {
+  font-size: 22px;
+}
+
+.nft__info-text {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.nft__info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nft__price {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.nft__time-left {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.nft__price img,
+.nft__time-left img {
+  height: 18px;
+  margin-right: 6px;
+}
+
+.nft__line {
+  background-color: hsl(215, 32%, 27%);
+  border: .5px solid hsl(215, 32%, 27%);
+}
+
+.nft__creator {
+  display: flex;
+  align-items: center;
+}
+
+.nft__creator__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  outline: 1px solid white;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nft__creator__avatar:hover {
+  opacity: .4;
+}
+
+.nft__creator__text {
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+.attribution {
+  opacity: .5;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(178, 100%, 50%);
+}
