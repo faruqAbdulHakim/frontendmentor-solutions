@@ -11,6 +11,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
@@ -29,7 +30,7 @@ body {
 
 .stats__card {
   background: var(--desaturated-blue);
-  margin: 15px;
+  margin: 30px;
   max-width: 380px;
   border-radius: 10px;
   overflow: hidden;
@@ -90,6 +91,7 @@ body {
 
 .stats__stats {
   margin-bottom: 24px;
+  list-style-type: none;
 }
 
 .stats__stats-text {
