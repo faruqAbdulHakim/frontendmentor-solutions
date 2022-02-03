@@ -16,7 +16,7 @@ profileStatsCount.forEach((count) => {
   const updateNumber = () => {
     const currentNumber = longNumberFormat(count.innerText);
     if (currentNumber < target) {
-      count.innerText = shortNumberFormat(currentNumber + target / 20)
+      count.innerText = shortNumberFormat(currentNumber + target / 10)
       setTimeout(() => {
         updateNumber();
       }, 100)
