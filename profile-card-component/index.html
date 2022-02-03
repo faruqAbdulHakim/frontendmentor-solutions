@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="profile__card">
+    <img src="images/bg-pattern-card.svg" alt="" aria-hidden="true" class="profile__bg-pattern">
+    <img src="images/image-victor.jpg" alt="profile" class="profile__image">
+    <div class="profile__info-wrapper">
+      <div class="profile__name-and-age-wrapper">
+        <h1 class="profile__name">Victor Crest</h1>
+        <p class="profile__age">26</p>
+      </div>
+      <p class="profile__location">London</p>
+    </div>
+    <hr class="profile__divider"/>
+    <ul class="profile__stats-wrapper">
+      <li class="profile__stats">
+        <p class="profile__stats__count" data-target="80000">80K</p>
+        <p class="profile__stats__info">Followers</p>
+      </li>
+      <li class="profile__stats">
+        <p class="profile__stats__count" data-target="803000">803K</p>
+        <p class="profile__stats__info">Likes</p>
+      </li>
+      <li class="profile__stats">
+        <p class="profile__stats__count" data-target="1400">1.4K</p>
+        <p class="profile__stats__info">Photos</p>
+      </li>
+    </ul>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/faruqAbdulHakim">Faruq Abdul Hakim</a>.
+  </footer>
+</body>
+</html>
