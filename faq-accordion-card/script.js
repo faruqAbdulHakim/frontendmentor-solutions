@@ -28,9 +28,12 @@ const faqs = [
   },
 ];
 
-faqs.forEach((faq) => {
+faqs.forEach((faq, index) => {
   const faqItem = document.createElement('li');
-  faqItem.classList.add('faq__accordion')
+  faqItem.classList.add('faq__accordion');
+  if (index === 1) {
+    faqItem.classList.add('active');
+  }
 
   const faqButton = document.createElement('button');
   faqButton.classList.add('faq__accordion__button');
@@ -51,10 +54,8 @@ faqs.forEach((faq) => {
   faqContent.classList.add('faq__accordion__content');
   faqContent.innerText = faq.content;
 
-
   faqItem.appendChild(faqButton);
   faqItem.appendChild(faqContent);
-
 
   faqAccordionsWrapper.appendChild(faqItem);
 })

@@ -36,6 +36,7 @@ body {
   align-items: center;
   padding: 30px;
   border-radius: 20px;
+  box-shadow: 0 30px 25px -10px rgba(0, 0, 0, .25);
 }
 
 .illustration {
@@ -130,7 +131,7 @@ body {
   font-size: .9rem;
   overflow: hidden;
   margin: 10px 0;
-  transform: translateX(100px);
+  transform: translateY(-25%);
   opacity: 0;
   transition: all .4s ease-in-out;
 }
@@ -143,7 +144,7 @@ body {
 .faq__accordion.active .faq__accordion__content {
   height: max-content;
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 
 .faq__accordion.active .faq__accordion__button::after {
