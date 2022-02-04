@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--Very-Light-Gray);
+  padding: 15px;
+}
+
+header {
+  margin-top: 40px;
+  text-align: center;
+  animation: fadeIn .9s ease-out;
+}
+
+.heading-text {
+  font-weight: 200;
+  font-size: 1.4rem;
+  color: var(--Very-Dark-Blue);
+}
+
+.heading-text span {
+  font-weight: 700;
+  display: block;
+}
+
+.info-text {
+  color: var(--Grayish-Blue);
+  font-size: .9rem;
+  max-width: 380px;
+  margin: 20px auto 0 auto;
+}
+
+main {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 40px 20px;
+}
+
+.feature__card {
+  box-shadow: 0 10px 25px -20px var(--Grayish-Blue);
+  border-radius: 5px;
+  width: 100%;
+  padding: 30px;
+  max-width: 380px;
+  transition: transform .4s ease-out;
+  opacity: 0;
+  animation: fadeIn 1.4s ease-out forwards;
+}
+.feature__card:hover {
+  transform: scale(1.05);
+}
+
+.feature__card:nth-child(1) {
+  border-top: 5px solid var(--Cyan);
+}
+.feature__card:nth-child(2) {
+  border-top: 5px solid var(--Red);
+  animation-delay: .2s;
+}
+.feature__card:nth-child(3) {
+  border-top: 5px solid var(--Orange);
+  animation-delay: .4s;
+}
+.feature__card:nth-child(4) {
+  border-top: 5px solid var(--Blue);
+  animation-delay: .6s;
+}
+
+.feature__heading-text {
+  font-size: 1.4rem;
+  color: var(--Very-Dark-Blue);
+}
+
+.feature__info-text {
+  font-size: .9rem;
+  color: var(--Grayish-Blue);
+  margin-top: 5px;
+}
+
+.feature__image {
+  margin-top: 50px;
+  float: right;
+}
+
+.attribution {
+  margin-top: 40px;
+  font-size: .8rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

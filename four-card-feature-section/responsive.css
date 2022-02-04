@@ -1,0 +1,19 @@
+@media screen and (min-width: 1280px) {
+  main {
+    grid-template-columns: repeat(3, minmax(360px, 400px));
+  }
+  .heading-text {
+    font-size: 2.2rem;
+  }
+  .info-text {
+    max-width: 500px;
+  }
+  .feature__card:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .feature__card:nth-child(4) {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+}
