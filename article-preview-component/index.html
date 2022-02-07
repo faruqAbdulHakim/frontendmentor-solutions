@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title>Frontend Mentor | Article preview component</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="script.js" defer></script>  
+</head>
+<body>
+
+  <main class="article__card">
+    <img src="images/drawers.jpg" alt="" aria-hidden="true" class="article__decorative-image"/>
+    <div>
+
+      <div class="article__content-wrapper">
+        <h1 class="article__heading-text">
+          Shift the overall look and feel by adding these wonderful touches to furniture in your home
+        </h1>
+        <p class="article__content-text">
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I`ve got some simple tips to help you make any room feel complete.
+        </p>
+      </div>
+
+      <div class="article__info-and-share-wrapper active">
+        <img src="/images/avatar-michelle.jpg" alt="avatar" class="article__writer-avatar clickable transition"/>
+
+        <div class="article__info-wrapper">
+          <p class="article__writer-name">
+            Michelle Appleton
+          </p>
+          <p class="article__time-written">
+            <time datetime="2020-06-28">
+              28 Jun 2020
+            </time>
+          </p>
+        </div>
+
+        <div class="article__share-options-wrapper">
+          <p class="article__share-guide-text" class="scale-on-hover">Share</p>
+          <button type="button" class="article__share-options-button clickable transition" aria-label="share on facebook">
+            <img src="images/icon-facebook.svg" alt="" aria-hidden="true"/>
+          </button>
+          <button type="button" class="article__share-options-button clickable transition" aria-label="share on twitter">
+            <img src="images/icon-twitter.svg" alt="" aria-hidden="true"/>
+          </button>
+          <button type="button" class="article__share-options-button clickable transition" aria-label="share on pinterest">
+            <img src="images/icon-pinterest.svg" alt="" aria-hidden="true"/>
+          </button>
+        </div>
+
+        <button type="button" class="article__share-button clickable transition" aria-label="share">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+            <path
+              class="transition"
+              fill="#6E8098" 
+              d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+            />
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </main>
+  
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/faruqAbdulHakim">Faruq Abdul Hakim</a>.
+  </footer>
+</body>
+</html>
