@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+/* transition */
+.transition {
+  transition: all .4s ease-out;
+}
+
+/* text color, default: black */
+.text-white {
+  color: white;
+}
+.text-red {
+  color: var(--Red);
+}
+.text-grayish-blue {
+  color: var(--Grayish-Blue)
+}
+
+/* bg-color */
+.bg-white {
+  background: white;
+}
+.bg-blue {
+  background: var(--Blue);
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 6px rgba(0,0,0,.2);
+}
+
+/* font weight, default: 400 */
+.font-700 {
+  font-weight: 700;
+}
+.font-600 {
+  font-weight: 600;
+}
+.font-500 {
+  font-weight: 500;
+}
+
+/* text-transform */
+.text-upper {
+  text-transform: uppercase;
+}
+
+/* -------------------------------------- */
+
+body {
+  min-height: 100vh;
+  background: var(--Red) url('images/bg-intro-mobile.png');
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+}
+
+.heading-text {
+  font-size: 1.8rem;
+}
+
+.info-text {
+  margin-top: 10px;
+}
+
+main {
+  max-width: 400px;
+}
+
+.notification {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-field {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 45px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-wrapper > input {
+  padding: 10px 10px 10px 20px;
+  border-radius: 5px;
+  outline: 1px solid lightgray;
+  transition: all .4s ease-out;
+  border: none;
+}
+.input-wrapper > input:focus {
+  outline: 2px solid var(--Blue);
+}
+.input-wrapper > input.outline-error {
+  outline: 2px solid var(--Red);
+}
+
+.input-wrapper > img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.input-error {
+  text-align: right;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.form-field > button {
+  background: var(--Green);
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: inset 0 -4px rgba(0,0,0,.2);
+}
+.form-field > button:hover {
+  transform: scale(1.05);
+}
+.form-field > button:active {
+  transform: scale(1);
+}
+
+.form-field > p {
+  font-size: .85rem;
+  text-align: center;
+}
+
+.form-field > p > a {
+  text-decoration: none;
+}
+
+/* -------------------------------------- */
+
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+@media screen and (min-width: 1280px) {
+  body {
+    background: var(--Red) url('images/bg-intro-mobile.png');
+  }
+  main {
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header {
+    text-align: left;
+    flex-basis: 45%;
+  }
+  form {
+    flex-basis: 55%;
+  }
+  .heading-text {
+    font-size: 2.4rem;
+  }
+  .break-on-mobile {
+    display: none;
+  }
+}
