@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+  --Gradient1: linear-gradient(135deg, hsl(0, 0, 100%), hsl(0, 100%, 98%));
+  --Gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+/* --------------------- */
+.text-desaturated-red {
+  color: var(--Desaturated-Red);
+}
+.text-dark-grayish-red {
+  color: var(--Dark-Grayish-Red);
+}
+
+.font-300 {
+  font-weight: 300;
+}
+.font-600 {
+  font-weight: 600;
+}
+
+/* --------------------- */
+
+.content-container {
+  padding: 25px;
+}
+
+.banner-container {
+  background: url('images/hero-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 18px 25px;
+  width: 100%;
+  background: white;
+}
+.logo-container img {
+  height: 24px;
+}
+
+.heading-text {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 2.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.info-text {
+  margin: 40px auto;
+  max-width: 300px;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+form {
+  margin: 40px auto;
+  height: 50px;
+  max-width: 300px;
+  position: relative;
+}
+
+form input {
+  height: 100%;
+  width: 100%;
+  min-width: 0;
+  max-width: 360px;
+  padding: 0 80px 0 30px;
+  background: transparent;
+  outline: none;
+  border: 1.3px solid var(--Desaturated-Red);
+  border-radius: 30px;
+}
+form input.border-error {
+  border: 2px solid var(--Soft-Red);
+}
+form input:focus {
+  border: 2px solid var(--Desaturated-Red);
+}
+form input::placeholder {
+  color: var(--Desaturated-Red);
+}
+
+form button {
+  background: var(--Gradient2);
+  border: none;
+  position: absolute;
+  top: -1px;
+  right: 0;
+  height: calc(100% + 2px);
+  width: 80px;
+  border-radius: 35px;
+  box-shadow: 0 12px 25px -4px rgba(200,0,0,.3);
+  cursor: pointer;
+  transition: all .4s ease-out;
+}
+form button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}
+form button:active {
+  transform: scale(.95);
+}
+
+form .error-img {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 13px;
+  right: 90px;
+}
+
+form .error-msg {
+  color: var(--Soft-Red);
+  margin: 10px 0 0 20px;
+  font-size: .9rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

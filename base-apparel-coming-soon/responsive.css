@@ -1,0 +1,45 @@
+@media screen and (min-width: 568px) {
+  .banner-container {
+    height: 380px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main {
+    display: flex;
+  }
+  .banner-container {
+    background-image: url('images/hero-desktop.jpg');
+    order: 1;
+    flex-basis: 40%;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 0;
+  }
+  .content-container {
+    background: url('images/bg-pattern-desktop.svg') no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    flex-basis: 60%;
+    padding: 50px 150px;
+  }
+  .logo-container {
+    padding: 18px 0;
+    position: static;
+    background: transparent;
+  }
+  .heading-text {
+    text-align: left;
+    margin: 40px 0;
+    font-size: 3.6rem;
+  }
+  .info-text {
+    margin: 40px 0;
+    text-align: left;
+    max-width: 400px;
+  }
+  form {
+    margin: 40px 0 0 0;
+    max-width: 400px;
+  }
+}
