@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, p, button {
+  color: white;
+}
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+p, button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9rem;
+}
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* -------------------------- */
+body {
+  background: var(--Violet) url('images/bg-mobile.svg') no-repeat top left;
+  background-size: contain;
+  padding: 15px;
+  min-height: 100vh;
+}
+
+header {
+  margin: 20px auto 50px auto;
+  max-width: 400px;
+}
+
+header > img {
+  width: 180px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.illustration-wrapper > img {
+  width: 100%;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.content-wrapper > h1 {
+  font-size: 1.4rem;
+}
+
+.content-wrapper > button {
+  height: 44px;
+  width: 200px;
+  background: white;
+  border-radius: 50px;
+  color: var(--Violet);
+  box-shadow: 0 4px 5px rgba(0,0,0,.3);
+  transition: all .2s ease-out;
+}
+.content-wrapper > button:hover {
+  background: var(--Soft-Magenta);
+  color: white;
+}
+.content-wrapper > button:active {
+  opacity: .4;
+}
+
+footer {
+  margin: 70px auto 10px auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+footer > button {
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: white;
+  border: 1.5px solid white;
+  transition: all .2s ease-out;
+}
+footer > button:first-child {
+  padding: 10px; /* facebook icon look larger than others*/
+}
+footer > button:hover {
+  fill: var(--Soft-Magenta);
+  border: 1.5px solid var(--Soft-Magenta);
+}
+footer > button:active {
+  opacity: .4;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

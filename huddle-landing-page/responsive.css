@@ -1,0 +1,33 @@
+@media screen and (min-width: 1280px) {
+  body {
+    background-image: url('images/bg-desktop.svg');
+  }
+  header {
+    max-width: 1024px;
+  }
+  main {
+    max-width: 1024px;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .illustration-wrapper {
+    flex-basis: 50%;
+  }
+  .content-wrapper {
+    margin-top: 30px;
+    flex-basis: 40%;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .content-wrapper > h1 {
+    font-size: 2rem;
+  }
+  .content-wrapper > button {
+    width: 160px;
+  }
+  footer {
+    margin: 0 auto;
+    max-width: 1024px;
+    justify-content: flex-end;
+  }
+}
