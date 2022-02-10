@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+@keyframes componentEnter {
+  0% {
+    transform: scale(.2);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Cyan2: hsl(179, 47%, 51%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+h1, h2, p, li, button {
+  font-size: 1rem;
+}
+
+.text-white {
+  color: white;
+}
+.text-cyan {
+  color: var(--Cyan);
+}
+.text-light-gray {
+  color: var(--Light-Gray);
+}
+.text-bright-yellow {
+  color: var(--Bright-Yellow);
+}
+.text-grayish-blue {
+  color: var(--Grayish-Blue);
+}
+
+.font-bold {
+  font-weight: 700;
+}
+/* ------------------------- */
+
+body {
+  background: var(--Light-Gray);
+  min-height: 100vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,.15);
+  animation: componentEnter .6s ease-out;
+}
+
+main > div {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.box-1 {
+  background: white;
+}
+.box-2 {
+  background: var(--Cyan);
+}
+.box-3 {
+  background-color: var(--Cyan2);
+}
+
+.heading-text {
+  font-size: 1.4rem;
+}
+.section-heading-text {
+  font-size: 1.2rem;
+}
+
+.box-1 p {
+  line-height: 1.8rem;
+}
+
+.box-2 > p > span {
+  margin-right: 8px;
+  font-size: 1.8rem;
+}
+
+.box-2 button {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 2px rgba(0,0,0,.1);
+  cursor: pointer;
+  background: var(--Bright-Yellow);
+  padding: 15px 0;
+  transition: all .4s ease-out;
+}
+.box-2 button:hover {
+  transform: scale(1.08);
+}
+.box-2 button:active {
+  transform: scale(1);
+}
+
+.box-3 > ul > li:not(:first-child) {
+  margin-top: 5px;
+}
+
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
