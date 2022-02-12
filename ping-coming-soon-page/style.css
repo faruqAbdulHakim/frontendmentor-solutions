@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+}
+
+.font-300 {
+  font-weight: 300;
+}
+.font-600 {
+  font-weight: 600;
+}
+.font-700 {
+  font-weight: 700;
+}
+
+/* -------------------------- */
+
+body {
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 375px;
+}
+
+header {
+  margin-top: 80px;
+  text-align: center;
+}
+header > a > img {
+  width: 72px
+}
+.heading-text {
+  font-size: 1.8em;
+  margin-top: 30px;
+  color: var(--Gray)
+}
+.heading-text > span {
+  color: black;
+}
+.guide-text {
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 280px;
+  margin: 40px auto 0 auto;
+  position: relative;
+}
+.email-input {
+  min-width: 0;
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: none;
+  outline: 1px solid var(--Pale-Blue);
+  transition: all .1s;
+}
+.email-input:focus {
+  outline: 2px solid var(--Blue);
+}
+.email-input::placeholder {
+  color: var(--Pale-Blue);
+}
+.form.error > .email-input {
+  outline: 1px solid var(--Light-Red);
+}
+.error-text {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  color: var(--Light-Red);
+  font-style: italic;
+  text-align: center;
+}
+.submit-button {
+  background: var(--Blue);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 2px var(--Pale-Blue);
+  cursor: pointer;
+  transition: all .4s;
+}
+.submit-button:hover {
+  opacity: .7;
+}
+.submit-button:active {
+  opacity: .4;
+}
+.form.error > .submit-button {
+  transform: translateY(36px);
+}
+
+.illustration-img {
+  margin-top: 70px;
+  width: 100%;
+}
+
+footer {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.share-options {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.share-options > button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--Pale-Blue);
+  background: transparent;
+  cursor: pointer;
+  fill: var(--Blue);
+  transition: all .4s;
+}
+.share-options > button > svg {
+  width: 100%;
+  height: 100%;
+  transform: scale(.5);
+}
+.share-options > button:hover {
+  fill: white;
+  background: var(--Blue);
+}
+.share-options > button:active {
+  background: white;
+}
+.copyright {
+  text-align: center;
+  color: var(--Gray);
+  margin-top: 36px;
+}

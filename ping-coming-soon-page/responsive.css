@@ -1,0 +1,28 @@
+@media screen and (min-width: 1280px) {
+  body {
+    max-width: 600px;
+  }
+
+  .heading-text {
+    font-size: 2.8em;
+  }
+
+  .form {
+    flex-direction: row;
+    max-width: unset;
+    gap: 16px;
+  }
+  .email-input {
+    flex-grow: 2;
+  }
+  .error-text {
+    width: unset;
+    left: 20px;
+  }
+  .submit-button {
+    flex-grow: 1;
+  }
+  .form.error > .submit-button {
+    transform: translateY(0);
+  }
+}
