@@ -23,7 +23,7 @@ class Tip {
   static calculateTip() {
     const { bill, tip, people } = tipData;
     const tipAmountEachPerson = bill * (tip/100) / people;
-    const billTotalEachPerson = bill / people;
+    const billTotalEachPerson = bill / people + tipAmountEachPerson;
     return {
       tip: tipAmountEachPerson,
       bill: billTotalEachPerson

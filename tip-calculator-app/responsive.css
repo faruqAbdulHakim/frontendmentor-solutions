@@ -2,8 +2,11 @@
   main {
     grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 800px;
+    max-width: 820px;
     padding: 35px;
+  }
+  .tip-selections {
+    grid-template-columns: repeat(3, 1fr);
   }
   .result-container {
     position: relative;
@@ -12,8 +15,8 @@
   }
   .reset-button {
     position: absolute;
-    width: 90%;
-    bottom: 20px;
-    left: 5%;
+    width: 80%;
+    bottom: 30px;
+    left: 10%;
   }
 }
