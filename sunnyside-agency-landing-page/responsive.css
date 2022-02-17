@@ -1,0 +1,122 @@
+@media screen and (min-width: 768px) {
+  /* HEADER */
+  .nav-button {
+    display: none;
+  }
+  nav {
+    flex-direction: row;
+    background-color: transparent;
+    position: static;
+    width: unset;
+    padding: 0;
+    gap: 35px;
+  }
+  nav::before {
+    display: none;
+  }
+  .nav-item {
+    color: white;
+  }
+  .main-nav-item {
+    background-color: white;
+  }
+  .main-nav-item:hover {
+    color: white;
+    background-color: rgb(109, 206, 253);
+    opacity: 1;
+  }
+  .hero {
+    background-image: url('./images/desktop/image-header.jpg');
+  }
+  /* MAIN - CONTENT */
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img-transform-container {
+    grid-column: 2 / 3;
+  }
+  .content-transform {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 0 8% 0 auto;
+  }
+  .content-stand-out {
+    margin: 0 auto 0 8%;
+  }
+  .content-transform, 
+  .content-stand-out {
+    text-align: left;
+    align-items: flex-start;
+    padding: 10px 40px;
+    width: 90%;
+    max-width: 500px;
+    height: 100%;
+    gap: 30px;
+  }
+  .content-transform > h2,
+  .content-stand-out > h2 {
+    font-size: 2em;
+  }
+  .img-transform-container {
+    background-image: url('./images/desktop/image-transform.jpg');
+  }
+  .img-stand-out-container {
+    background-image: url('./images/desktop/image-stand-out.jpg');
+  }
+  .content-graphic-design {
+    background-image: url('./images/desktop/image-graphic-design.jpg');
+    aspect-ratio: 1/1;
+  }
+  .content-photography {
+    background-image: url('./images/desktop/image-photography.jpg');
+    aspect-ratio: 1/1;
+  }
+  
+  .content-graphic-design > p,
+  .content-photography > p {
+    margin: 15px auto 50px auto;
+  }
+
+  /* MAIN - TESTIMONIAL */
+  .testimonial {
+    gap: 80px;
+  }
+  .testimonial-heading-text {
+    font-size: 1.2em;
+  }
+  .testimonial-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .testimony {
+    max-width: 320px;
+  }
+  .testimony-text {
+    margin-top: 45px;
+  }
+  .testimony-giver-name {
+    margin-top: 45px;
+  }
+
+  /* FOOTER - IMG GALLERY */
+  .img-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .img-gallery > div {
+    aspect-ratio: 3/4;
+  }
+  .img-gallery-milk {
+    background-image: url('./images/desktop/image-gallery-milkbottles.jpg');
+  }
+  .img-gallery-orange {
+    background-image: url('./images/desktop/image-gallery-orange.jpg');
+  }
+  .img-gallery-cone {
+    background-image: url('./images/desktop/image-gallery-cone.jpg');
+  }
+  .img-gallery-sugarcube {
+    background-image: url('./images/desktop/image-gallery-sugarcubes.jpg');
+  }
+}

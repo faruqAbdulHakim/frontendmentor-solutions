@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+:root {
+  --red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --grayish-blue1: hsl(210, 4%, 67%);
+  --grayish-blue2: hsl(232, 10%, 55%);
+  --grayish-blue3: hsl(213, 9%, 39%);
+  --desaturated-blue: hsl(212, 27%, 19%);
+  --footer-cyan: hsl(168, 32%, 69%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+.main-nav-item,
+.content-learn-more,
+.testimony-giver-name {
+  font-family: 'Fraunces', serif;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.transition {
+  transition: all .3s ease-out;
+}
+
+.fadeOutOnClick:active {
+  opacity: .4;
+}
+
+/* HEADER */
+
+.app-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  position: absolute;
+  bottom: -240px;
+  right: 26px;
+  width: calc(100% - 2 * 26px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: white;
+  padding: 25px;
+}
+nav::before {
+  content: "";
+  position: absolute;
+  top: -19px;
+  right: 0;
+  display: block;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%);
+}
+.nav-item {
+  color: var(--grayish-blue1);
+}
+.nav-item:hover {
+  color: var(--desaturated-blue);
+}
+.main-nav-item {
+  background-color: var(--yellow);
+  padding: 14px 24px;
+  color: var(--desaturated-blue);
+  border-radius: 30px;
+}
+.main-nav-item:hover {
+  opacity: .6;
+}
+
+.hero {
+  background-image: url('./images/mobile/image-header.jpg');
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.hero > h1 {
+  font-size: 2.6em;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0) scale(.7);
+  } to {
+    transform: translateY(50px) scale(.9);
+  }
+}
+
+.hero > a {
+  animation: bounce 1.4s ease-in-out infinite alternate ;
+}
+
+/* MAIN - CONTENT */
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.content > * {
+  aspect-ratio: 1 / 1;
+}
+
+.content-transform, 
+.content-stand-out {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.content-heading-text {
+  color: var(--desaturated-blue);
+  font-size: 1.8em;
+  font-weight: 900;
+}
+.content-text1 {
+  color: var(--grayish-blue2);
+  line-height: 1.4em;
+}
+
+.content-learn-more {
+  text-transform: uppercase;
+  margin-top: 12px;
+  display: inline;
+  position: relative;
+}
+
+.content .underline {
+  display: block;
+  width: calc(100% + 16px);
+  height: 10px;
+  transform: translateY(25px) translateX(-8px);
+  opacity: .3;
+  border-radius: 10px;
+}
+
+.content-transform .underline {
+  background: var(--yellow);
+}
+.content-stand-out .underline {
+  background: var(--red);
+}
+
+.img-transform-container,
+.img-stand-out-container,
+.content-graphic-design,
+.content-photography {
+  display: block;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-transform-container {
+  background-image: url('./images/mobile/image-transform.jpg');
+}
+.img-stand-out-container {
+  background-image: url('./images/mobile/image-stand-out.jpg');
+}
+.content-graphic-design {
+  background-image: url('./images/mobile/image-graphic-design.jpg');
+  color: var(--dark-cyan)
+}
+.content-photography {
+  background-image: url('./images/mobile/image-photography.jpg');
+  color: var(--dark-blue);
+}
+.content-graphic-design,
+.content-photography  {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  aspect-ratio: 3/4;
+  padding: 10px;
+}
+.content-graphic-design > p,
+.content-photography > p {
+  max-width: 400px;
+  margin: 15px auto 30px auto;
+  line-height: 1.4em;
+}
+
+/* MAIN - TESTIMONIAL */
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  min-height: 100vh;
+  padding: 60px 40px;
+  text-align: center;
+}
+.testimonial-heading-text {
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 4em;
+  color: var(--grayish-blue1);
+  letter-spacing: 4px;
+}
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+
+.testimony-giver-img {
+  border-radius: 50%;
+  width: 80px;
+}
+.testimony-text {
+  color: var(--grayish-blue3);
+  margin-top: 30px;
+  line-height: 1.6em;
+}
+.testimony-giver-name {
+  margin-top: 30px;
+}
+.testimony-giver-job {
+  margin-top: 15px;
+  color: var(--grayish-blue1);
+  font-size: .9em;
+}
+
+/* FOOTER */
+footer {
+  background: var(--footer-cyan);
+  color: var(--dark-cyan)
+}
+
+/* FOOTER - IMG GALLERY */
+
+.img-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.img-gallery > div {
+  display: block;
+  background-size: cover;
+  aspect-ratio: 1/1;
+}
+.img-gallery-milk {
+  background-image: url('./images/mobile/image-gallery-milkbottles.jpg');
+}
+.img-gallery-orange {
+  background-image: url('./images/mobile/image-gallery-orange.jpg');
+}
+.img-gallery-cone {
+  background-image: url('./images/mobile/image-gallery-cone.jpg');
+}
+.img-gallery-sugarcube {
+  background-image: url('./images/mobile/image-gallery-sugar-cubes.jpg');
+}
+
+/* FOOTER - CONTENT */
+.footer-content {
+  padding: 80px 20px;
+  text-align: center;
+}
+.footer-nav {
+  max-width: 300px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-nav > a:hover {
+  color: white;
+}
+
+.footer-social-media {
+  display: flex;
+  max-width: 200px;
+  margin: 80px auto 0 auto;
+  justify-content: space-between;
+  fill: var(--dark-cyan);
+}
+.footer-social-media > svg {
+  cursor: pointer;
+}
+.footer-social-media > svg:hover {
+  fill: white;
+}
