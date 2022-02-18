@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+  <script type="module" src="./script.js"></script>
+</head>
+<body>
+  <main>
+    <div class="card main-card bg-blue-dark">
+      <div class="card pad">
+        <img src="./images/image-jeremy.png" alt="avatar" class="img-avatar"/>
+        <h1 class="fw-300 fs-sm c-blue-pale">
+          Report for <span class="c-white fs-lg d-block">Jeremy Robson</span>
+        </h1>
+      </div>
+      <div class="time-select-wrapper pad c-blue-pale">
+        <button type="button" class="transition" data-time="Day">Daily</button>
+        <button type="button" class="transition c-white" data-time="Week">Weekly</button>
+        <button type="button" class="transition" data-time="Month">Monthly</button>
+      </div>
+    </div>
+
+    <div class="card bg-orange bg-work card-bg-style">
+      <div class="card bg-blue-dark pad transition">
+        <div class="card-header-wrapper">
+          <h2 class="fs-base fw-400">Work</h2>
+          <img src="./images/icon-ellipsis.svg" alt="" class="ellipsis">
+        </div>
+        <div class="card-content-wrapper transition" data-content="content-wrapper" data-type="work">
+          <p class="fs-lg fw-300" data-content="current-time">32hrs</p>
+          <p class="fs-sm c-blue-pale" data-content="last-time">Last Week - 36hrs</p>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-blue-soft bg-play card-bg-style">
+      <div class="card bg-blue-dark pad transition">
+        <div class="card-header-wrapper">
+          <h2 class="fs-base fw-400">Play</h2>
+          <img src="./images/icon-ellipsis.svg" alt="" class="ellipsis">
+        </div>
+        <div class="card-content-wrapper transition" data-content="content-wrapper" data-type="play">
+          <p class="fs-lg fw-300" data-content="current-time">32hrs</p>
+          <p class="fs-sm c-blue-pale" data-content="last-time">Last Week - 36hrs</p>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-red-soft bg-study card-bg-style">
+      <div class="card bg-blue-dark pad transition">
+        <div class="card-header-wrapper">
+          <h2 class="fs-base fw-400">Study</h2>
+          <img src="./images/icon-ellipsis.svg" alt="" class="ellipsis">
+        </div>
+        <div class="card-content-wrapper transition" data-content="content-wrapper" data-type="study">
+          <p class="fs-lg fw-300" data-content="current-time">32hrs</p>
+          <p class="fs-sm c-blue-pale" data-content="last-time">Last Week - 36hrs</p>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-green-lime bg-exercise card-bg-style">
+      <div class="card bg-blue-dark pad transition">
+        <div class="card-header-wrapper">
+          <h2 class="fs-base fw-400">Exercise</h2>
+          <img src="./images/icon-ellipsis.svg" alt="" class="ellipsis">
+        </div>
+        <div class="card-content-wrapper transition" data-content="content-wrapper" data-type="exercise">
+          <p class="fs-lg fw-300" data-content="current-time">32hrs</p>
+          <p class="fs-sm c-blue-pale" data-content="last-time">Last Week - 36hrs</p>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-violet bg-social card-bg-style">
+      <div class="card bg-blue-dark pad transition">
+        <div class="card-header-wrapper">
+          <h2 class="fs-base fw-400">Social</h2>
+          <img src="./images/icon-ellipsis.svg" alt="" class="ellipsis">
+        </div>
+        <div class="card-content-wrapper transition" data-content="content-wrapper" data-type="social">
+          <p class="fs-lg fw-300" data-content="current-time">32hrs</p>
+          <p class="fs-sm c-blue-pale" data-content="last-time">Last Week - 36hrs</p>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-yellow bg-self-care card-bg-style">
+      <div class="card bg-blue-dark pad transition">
+        <div class="card-header-wrapper">
+          <h2 class="fs-base fw-400">Self Care</h2>
+          <img src="./images/icon-ellipsis.svg" alt="" class="ellipsis">
+        </div>
+        <div class="card-content-wrapper transition" data-content="content-wrapper" data-type="self care">
+          <p class="fs-lg fw-300" data-content="current-time">32hrs</p>
+          <p class="fs-sm c-blue-pale" data-content="last-time">Last Week - 36hrs</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</body>
+</html>

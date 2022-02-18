@@ -1,0 +1,29 @@
+@media screen and (min-width: 1280px) {
+
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 1024px;
+  }
+
+  /* -------------------- */
+  .main-card {
+    grid-row: 1 / 3;
+  }
+  .main-card > .card {
+    flex-direction: column;
+    gap: calc(var(--space) * 1.5);
+    align-items: flex-start;
+  }
+  .time-select-wrapper {
+    flex-direction: column;
+    gap: calc(var(--space) * .4);
+  }
+
+  .card-content-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: calc(var(--space));
+  }
+  
+}
