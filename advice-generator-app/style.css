@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+  --light-grey: hsl(193, 38%, 86%);
+  --green: hsl(150, 100%, 66%);
+  --bg-body: rgb(32, 38, 50);
+  --bg-card: rgb(49, 58, 73);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 23px;
+}
+
+body,
+h1,
+p,
+blockquote {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-body);
+  font-family: 'Manrope', sans-serif;
+  padding: 20px;
+}
+
+button {
+  font: inherit;
+  border: none;
+  background: transparent;
+}
+
+.c-green {
+  color: var(--green);
+}
+.c-light-grey {
+  color: var(--light-grey);
+}
+.pad {
+  padding: var(--space);
+}
+
+main {
+  position: relative;
+  background-color: var(--bg-card);
+  border-radius: 14px;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 50px 60px 50px;
+  box-shadow: 
+    0 20px 4px 40px rgba(0,0,0,.03),
+    0 20px 4px 80px rgba(0,0,0,.01);
+}
+
+.heading-text {
+  font-size: .5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+blockquote {
+  overflow: hidden;
+  transition: all .8s ease-out;
+  max-height: 100vh;
+}
+blockquote.collapsed {
+  max-height: 0;
+  opacity: .2;
+}
+
+.divider {
+  background-image: url('./images/pattern-divider-mobile.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 17px;
+}
+
+.random-button {
+  position: absolute;
+  bottom: -28px;
+  left: calc(50% - 28px);
+  border-radius: 50px;
+  background-color: var(--green);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .8s;
+}
+.random-button:hover {
+  box-shadow: 0 0 30px var(--green);
+}
+.random-button:active {
+  transform: rotateZ(360deg);
+  box-shadow: 0 0 5px var(--green);
+}
+
+@media screen and (min-width: 568px) {
+  .divider {
+    background-image: url('./images/pattern-divider-desktop.svg');
+  }
+} 
