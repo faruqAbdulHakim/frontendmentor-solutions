@@ -18,11 +18,11 @@ class MainSecondCard extends HTMLElement {
           max-width: 720px;
           background: white;
           border-radius: 10px;
-          border: 1px solid rgba(0,0,0,.15);
+          border: .5px solid rgba(0,0,0,.1);
         }
         .progress-info {
           display: grid;
-          grid-template-row: repeat(3, 1fr);
+          grid-template-rows: repeat(3, 1fr);
           justify-content: center;
           gap: 30px;
           margin-bottom: 20px;

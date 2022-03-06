@@ -65,7 +65,7 @@ class BookmarkButton extends HTMLElement {
       </style>
     `
     this.innerHTML = styles + `
-      <button class="bookmark-button" data-is-bookmarked="true">
+      <button class="bookmark-button" data-is-bookmarked="false">
         <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
             <circle class="bookmark-icon-circle" fill="#2F2F2F" cx="28" cy="28" r="28"/>
@@ -77,7 +77,6 @@ class BookmarkButton extends HTMLElement {
     `
 
     this.updateEl();
-    console.log(this.buttonEl);
     this.buttonEl.addEventListener('click', () => {this.changeBookmarkState()});
   }
 }

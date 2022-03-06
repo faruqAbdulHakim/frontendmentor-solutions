@@ -18,7 +18,7 @@ class MainThirdCard extends HTMLElement {
           max-width: 720px;
           background: white;
           border-radius: 10px;
-          border: 1px solid rgba(0,0,0,.15);
+          border: .5px solid rgba(0,0,0,.1);
           display: flex;
           flex-direction: column;
           gap: 20px;
@@ -30,7 +30,7 @@ class MainThirdCard extends HTMLElement {
           color: var(--gray);
         }
         .main-third-card__inner {
-          border: 1px solid rgba(0,0,0,.4);
+          border: .5px solid rgba(0,0,0,.15);
           border-radius: 10px;
           padding: 40px;
           display: flex;

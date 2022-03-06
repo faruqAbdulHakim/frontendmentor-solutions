@@ -42,7 +42,7 @@ class AppBar extends HTMLElement {
     const { nav, navButton, navButtonImg } = this;
     nav.classList.remove('hide');
     navButton.ariaLabel = 'hide navigation';
-    navButtonImg.src = '../images/icon-close-menu.svg';
+    navButtonImg.src = './images/icon-close-menu.svg';
     this.addOverlay();
     this.updateEl();
   }
@@ -51,7 +51,7 @@ class AppBar extends HTMLElement {
     const { nav, navButton, navButtonImg } = this;
     nav.classList.add('hide');
     navButton.ariaLabel = 'show navigation';
-    navButtonImg.src = '../images/icon-hamburger.svg';
+    navButtonImg.src = './images/icon-hamburger.svg';
     this.removeOverlay();
     this.updateEl();
   }
@@ -69,6 +69,7 @@ class AppBar extends HTMLElement {
     const styles = `
       <style>
         .app-bar {
+          z-index: 1;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -152,10 +153,10 @@ class AppBar extends HTMLElement {
     this.innerHTML = styles + `
       <div class="app-bar">
         <a class="logo">
-          <img src="../images/logo.svg" alt=""/>
+          <img src="./images/logo.svg" alt=""/>
         </a>
         <button type="button" aria-label="show navigation">
-          <img src="../images/icon-hamburger.svg" alt="" aria-hidden="true"/>
+          <img src="./images/icon-hamburger.svg" alt="" aria-hidden="true"/>
         </button>
         <nav>
           <a href="#" class="nav-item">About</a>

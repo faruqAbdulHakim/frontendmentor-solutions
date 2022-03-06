@@ -6,6 +6,7 @@ class OverlayEl extends HTMLElement {
     const styles = `
       <style>
         .overlay-el {
+          z-index: 1;
           background-color: black;
           opacity: .2;
           position: fixed;

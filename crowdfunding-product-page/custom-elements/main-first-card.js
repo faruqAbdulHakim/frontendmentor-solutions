@@ -20,7 +20,7 @@ class MainFirstCard extends HTMLElement {
           display: block;
           position: absolute;
           top: -28px;
-          background: url('../images/logo-mastercraft.svg');
+          background: url('./images/logo-mastercraft.svg');
           background-size: contain;
         }
         .main-first-card > div {
@@ -29,17 +29,17 @@ class MainFirstCard extends HTMLElement {
           max-width: 720px;
           background: white;
           border-radius: 10px;
-          border: 1px solid rgba(0,0,0,.15);
+          border: .5px solid rgba(0,0,0,.1);
         }
         .main-heading-text {
           text-align: center;
           font-size: 1.4rem;
+          margin-top: 10px;
         }
         .main-info-text {
           text-align: center;
           color: var(--gray);
           margin-top: 20px;
-          font-weight: 500px;
         }
         .main-cta-container {
           display: flex;
@@ -49,7 +49,7 @@ class MainFirstCard extends HTMLElement {
 
         @media screen and (min-width: 640px) {
           .main-heading-text {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
           }
         }
       </style>
@@ -58,7 +58,7 @@ class MainFirstCard extends HTMLElement {
       <div class="main-first-card">
         <div>
           <h1 class="main-heading-text">
-          Mastercraft Bamboo Monitor Riser
+            Mastercraft Bamboo Monitor Riser
           </h1>
           <p class="main-info-text">
             A beautiful & handcrafted monitor stand to reduce neck and eye strain.

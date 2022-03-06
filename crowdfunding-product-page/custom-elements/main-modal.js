@@ -42,7 +42,6 @@ class MainModal extends HTMLElement {
         inner.classList.add('o-half');
       } else {
         innerHeaderText.addEventListener('click', () => {
-          console.log('clicked')
           this.removeSelected();
           inner.classList.add('selected');
           selectRadio.classList.add('selected');
@@ -90,6 +89,8 @@ class MainModal extends HTMLElement {
           align-items: center;
         }
         .main-modal > div {
+          z-index: 1;
+          margin: 0 20px;
           padding: 40px;
           width: 100%;
           max-width: 720px;
@@ -97,7 +98,7 @@ class MainModal extends HTMLElement {
           overflow-y: auto;
           background: white;
           border-radius: 10px;
-          border: 1px solid rgba(0,0,0,.15);
+          border: .5px solid rgba(0,0,0,.1);
           display: flex;
           flex-direction: column;
           gap: 20px;
@@ -129,7 +130,7 @@ class MainModal extends HTMLElement {
         }
         .main-modal__inner {
           padding: 20px;
-          border: 1px solid rgba(0,0,0,.4);
+          border: .5px solid rgba(0,0,0,.15);
           border-radius: 10px;
           display: flex;
           flex-direction: column;

@@ -27,6 +27,8 @@ class SuccessModal extends HTMLElement {
         align-items: center;
       }
       .success-modal > div {
+        margin: 0 20px;
+        z-index: 1;
         padding: 40px;
         width: 100%;
         max-width: 520px;
